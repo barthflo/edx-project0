@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Libre+Baskerville|Playfair+Display|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-/** Media Queries **/
-@media screen and (min-width: 769px) {
-  .desktop {
-    display: none; } }
 /** Elelements base settings **/
 body, .container-fluid, .row, section {
   margin: 0;
@@ -14,10 +10,10 @@ body, .container-fluid, .row, section {
   margin: 0;
   padding: 0; }
 
-ul, li, button, a {
+ul, li, button, a, a:hover {
+  font-family: "Libre Baskerville", serif;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Libre Baskerville", serif;
   text-transform: capitalize;
   cursor: pointer;
   margin: 0;
@@ -61,10 +57,9 @@ h2 {
     font-weight: lighter;
     margin: 20px 0;
     text-align: center; }
-  #collapse-menu a {
+  #collapse-menu li:hover {
+    color: #2D87B3;
     text-decoration: none; }
-  #collapse-menu a:active {
-    color: #2D87B3; }
 
 /** Head bar **/
 header {
@@ -80,6 +75,19 @@ header {
     margin-top: 23px;
     padding-left: 15px; }
 
+.desktop-menu ul {
+  text-align: right;
+  margin-top: 20px; }
+.desktop-menu li {
+  display: inline-block;
+  padding: 0 46px;
+  font-size: .6em; }
+.desktop-menu li:hover {
+  color: #2D87B3;
+  text-decoration: underline; }
+.desktop-menu a {
+  color: white; }
+
 /** hamburger icon **/
 .container-hamburger {
   display: inline-block;
@@ -94,6 +102,13 @@ header {
     background-color: #C37E5E;
     margin: 6px 0;
     transition: 0.4s; }
+
+.container-hamburger:hover .bar1 {
+  background-color: #2D87B3; }
+.container-hamburger:hover .bar2 {
+  background-color: #2D87B3; }
+.container-hamburger:hover .bar3 {
+  background-color: #2D87B3; }
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -115,11 +130,34 @@ header {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: left; }
+  object-position: center; }
 .section1 h2 {
   position: relative;
   top: -350px;
   padding: 0 60px;
   text-align: center; }
+.section1 .btn-group-vertical {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16%;
+  position: absolute;
+  top: 391px; }
+.section1 .btn-primary {
+  border-color: black;
+  border-radius: 0px;
+  background-color: #A7776A;
+  padding: 3px;
+  font-size: .8em; }
+
+/** Media Queries **/
+@media screen and (min-width: 991px) {
+  .desktop {
+    display: none; }
+
+  header h1 {
+    font-size: 1.6em;
+    text-align: left;
+    margin-top: 23px;
+    padding: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

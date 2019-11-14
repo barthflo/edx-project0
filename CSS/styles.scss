@@ -12,13 +12,8 @@ $color2:#D1CDCC;
 $color3:black;
 $color4:#FCE6CB;
 $color5:#2D87B3;
+$color6:#A7776A;
 
-/** Media Queries **/
-@media screen and (min-width:769px){
-    .desktop{
-        display:none;
-    }
-}
 /** Elelements base settings **/
 body, .container-fluid,.row,section{
     margin:0;
@@ -29,10 +24,10 @@ body, .container-fluid,.row,section{
     margin: 0;
     padding: 0;
 }
-ul, li, button,a{
+ul,li,button,a, a:hover{
+    font-family: $menu;
     list-style-type: none;
     text-decoration: none;
-    font-family: $menu;
     text-transform: capitalize;
     cursor: pointer;
     margin:0;
@@ -79,11 +74,9 @@ h2{
         margin:20px 0;
         text-align: center;
     }
-    a{
-        text-decoration: none;
-    }
-    a:active{
+    li:hover{
         color: $color5;
+        text-decoration: none;
     }
 }
 /** Head bar **/
@@ -102,6 +95,24 @@ header{
         padding-left: 15px;
     }
 }
+.desktop-menu {
+    ul{
+        text-align: right;
+        margin-top:20px;
+    }
+    li{
+        display: inline-block;
+        padding: 0 46px;
+        font-size: .6em;
+    }
+    li:hover {
+        color: $color5;
+        text-decoration: underline;
+    }
+    a{
+        color: white;
+    }
+}
 /** hamburger icon **/
 .container-hamburger{
     display: inline-block;
@@ -116,6 +127,17 @@ header{
         background-color: $color1;
         margin: 6px 0;
         transition: 0.4s;
+    }
+}
+.container-hamburger:hover{
+    .bar1{
+        background-color:$color5;
+    }
+    .bar2{
+        background-color:$color5;
+    }
+    .bar3{
+        background-color:$color5;
     }
 }
 .change{
@@ -143,7 +165,7 @@ header{
     width:100%;
     height:400px;
     object-fit:cover;
-    object-position: left;
+    object-position: center;
     }
     h2{
         position:relative;
@@ -151,7 +173,34 @@ header{
         padding: 0 60px;
         text-align: center;
     }
+    .btn-group-vertical{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16%;
+        position:absolute;
+        top:391px;
+    }
+    .btn-primary{
+        border-color:$color3;
+        border-radius: 0px;
+        background-color:$color6;
+        padding: 3px;
+        font-size: .8em;
+    }
 }
 
+/** Media Queries **/
+@media screen and (min-width:991px){
+    .desktop{
+        display:none;
+    }
+
+header h1{
+    font-size:1.6em;
+    text-align: left;
+    margin-top:23px;
+    padding: 0;
+}
+}
 
 
