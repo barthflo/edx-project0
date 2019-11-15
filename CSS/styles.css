@@ -11,7 +11,7 @@ body, .container-fluid, .row, section {
   padding: 0;
   height: 100%; }
 
-ul, li, a, a:hover {
+ul, li, a, i {
   font-family: "Libre Baskerville", serif;
   list-style-type: none;
   text-decoration: none;
@@ -19,6 +19,11 @@ ul, li, a, a:hover {
   cursor: pointer;
   margin: 0;
   padding: 0; }
+
+a:hover, i:hover {
+  color: #C37E5E;
+  text-decoration: none;
+  transition: .4s ease; }
 
 h1, h2, h3, h4, h5, h6, p, img {
   margin: 0;
@@ -73,7 +78,8 @@ p {
     text-align: center; }
   #collapse-menu li:hover {
     color: #3d545f;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: .6s ease; }
 
 /** Head bar **/
 header {
@@ -101,8 +107,9 @@ header {
   padding: 0 46px;
   font-size: .6em; }
 .desktop-menu li:hover {
-  color: #3d545f;
-  text-decoration: underline; }
+  color: #C37E5E;
+  text-decoration: underline;
+  transition: .4s ease; }
 .desktop-menu a {
   color: white; }
 
@@ -209,6 +216,70 @@ header {
     .section4 h4 a:hover {
       color: #3d545f;
       font-weight: bold; }
+
+/** Section 5 Form **/
+.section5 .row {
+  height: 300px; }
+.section5 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+.section5 .sign-up {
+  position: relative;
+  bottom: 300px;
+  padding: 80px 0; }
+  .section5 .sign-up p {
+    color: white;
+    font-size: 4vw;
+    padding-bottom: 5px; }
+  .section5 .sign-up form {
+    border: 2px solid white;
+    margin: 0 40px;
+    display: inline-block; }
+    .section5 .sign-up form input {
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-family: "Libre Baskerville", serif;
+      font-size: 4vw; }
+    .section5 .sign-up form input[type=submit] {
+      -webkit-appearance: none;
+      cursor: pointer;
+      border-left: 1px solid white; }
+    .section5 .sign-up form input[type=submit]:hover {
+      color: #243035; }
+    .section5 .sign-up form input[type=text] {
+      opacity: .8;
+      padding-left: 5px; }
+    .section5 .sign-up form ::placeholder {
+      color: white;
+      opacity: .8;
+      padding-left: 5px; }
+
+/** Footer **/
+.footer {
+  background-color: black;
+  padding: 10px; }
+  .footer .col-12, .footer .col-6 {
+    height: 15px; }
+  .footer a, .footer p {
+    color: white;
+    display: inline-block;
+    padding: 0; }
+  .footer a {
+    font-size: .5em;
+    text-transform: lowercase;
+    vertical-align: text-top; }
+  .footer p {
+    font-size: .4em;
+    font-style: italic;
+    vertical-align: middle; }
+  .footer #facebook {
+    text-align: right;
+    padding-right: 10px; }
+  .footer #instagram {
+    text-align: left;
+    padding-left: 10px; }
 
 /** Media Queries **/
 @media screen and (min-width: 992px) {

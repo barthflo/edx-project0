@@ -31,7 +31,7 @@ body, .container-fluid,.row,section{
     padding: 0;
     height:100%;
 }
-ul,li, a, a:hover{
+ul,li, a, i{
     font-family: $menu;
     list-style-type: none;
     text-decoration: none;
@@ -39,6 +39,11 @@ ul,li, a, a:hover{
     cursor: pointer;
     margin:0;
     padding:0;
+}
+a:hover, i:hover{
+    color:$color1;
+    text-decoration: none;
+    transition: .4s ease;
 }
 h1,h2,h3,h4,h5,h6,p,img{
     margin:0;
@@ -99,6 +104,7 @@ p{
     li:hover{
         color: $color5;
         text-decoration: none;
+        transition:.6s ease;
     }
 }
 /** Head bar **/
@@ -132,8 +138,9 @@ header{
         font-size: .6em;
     }
     li:hover {
-        color: $color5;
+        color: $color1;
         text-decoration: underline;
+        transition:.4s ease;
     }
     a{
         color: $color8;
@@ -261,6 +268,88 @@ header{
         font-weight: bold;
     }
 }
+}
+/** Section 5 Form **/ 
+.section5{
+    .row{
+        height:300px;
+    }
+    img{
+        width:100%;
+        height: 300px;
+        object-fit:cover;
+    }
+    .sign-up{
+        position:relative;
+        bottom:300px;
+        padding:80px 0;
+        p{
+            color:$color8;
+            font-size:4vw;
+            padding-bottom:5px;
+        }
+        form{
+            border:2px solid $color8;
+            margin:0 40px;
+            display:inline-block;
+            input{
+                border:none;
+                background-color:transparent;
+                color:$color8;
+                font-family:$menu;
+                font-size:4vw;
+            }
+            input[type=submit]{
+                -webkit-appearance: none;
+                cursor: pointer;
+                border-left:1px solid $color8;
+            }
+            input[type=submit]:hover{
+                color:$color7;
+            }
+            input[type=text]{
+                opacity:.8;
+                padding-left: 5px;
+            }
+            ::placeholder{
+                color:$color8;
+                opacity:.8;
+                padding-left:5px;
+            }
+        }
+    }
+}
+/** Footer **/ 
+.footer{
+    background-color:$color3;
+    padding:10px;
+    .col-12, .col-6{
+        height:15px;
+    }
+    a, p{
+        color:$color8;
+        display:inline-block;
+        padding:0;
+    }
+    a{
+        font-size:.5em;
+        text-transform: lowercase;
+        vertical-align:text-top;
+    }
+    p{
+        font-size:.4em;
+        font-style:italic;
+        vertical-align:middle;
+    }
+    #facebook{
+        text-align: right;
+        padding-right:10px;
+    }
+    #instagram{
+        text-align: left;
+        padding-left:10px;
+    }
+
 }
 /** Media Queries **/
 @media screen and (min-width:$screen-md){
