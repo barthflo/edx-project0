@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <title>Wind Horse Tours</title>
 </head>
 <body>
+    <div class="container-fluid hamburger">
+        <div class="col-1 offset-11 desktop">
+            <div class="container-hamburger desktop" onclick="myFunction(this)">
+                <a href="#collapse-menu" data-toggle="collapse">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="collapse container-fluid desktop" id="collapse-menu">
         <div class="row">
             <div class="col-12 col-sm-4 offset-sm-8">
-                <a href="index.html"><img src="/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/windhorse.png" alt="logo"></a>
+                <a href="index.html"><img src="image_library/windhorse.png" alt="logo"></a>
                 <ul class="collapse-menu">
                     <a href="tours.html"><li>Our tours</li></a>
                     <a href="create.html"><li>Create your own</li></a>
@@ -24,21 +35,13 @@
     <header class="container-fluid">
         <div class="row">
             <div class="col-1">
-               <a href="index.html"><img src="/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/windhorse.png" alt="logo"></a>
+               <a href="index.html"><img src="image_library/windhorse.png" alt="logo"></a>
             </div>
             <div class="col-10 col-lg-5">
                 <h1>Wind Horse Tours</h1>
             </div>
-            <div class="col-1 desktop">
-                <div class="container-hamburger desktop" onclick="myFunction(this)">
-                    <a href="#collapse-menu" data-toggle="collapse">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-6 desktop-menu">
+            
+            <div class="col-lg-6 desktop-menu mobile">
                 <ul>
                     <a href="#"><li>our tours</li></a>
                     <a href="#"><li>create your own</li></a>
@@ -50,62 +53,68 @@
     <section class="container-fluid section1">
         <div class="row">
             <div class="col-12">
-                <img alt="main" src="/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/IMG_8092_tonemapped.jpg">
+                <img alt="main" src="image_library/IMG_8092_tonemapped.jpg">
                 <h2>Discover the nomadic life with an authentic family runned company!</h2>
-            </div>
-            <div class="col-12 btn-group-vertical desktop" role="group" aria-label="group">
-                    <a href="#" role="button" class="btn btn-primary">our tours</a>
-                    <a href="#" role="button" class="btn btn-primary">create your own </a>
-                    <a href="#" role="button" class="btn btn-primary">about us</a>
+                <div class="col-12 col-sm-6 offset-sm-1 btn-group-vertical desktop" role="group" aria-label="group">
+                        <a href="#" role="button" class="btn btn-primary">our tours</a>
+                        <a href="#" role="button" class="btn btn-primary">create your own </a>
+                        <a href="#" role="button" class="btn btn-primary">about us</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="container-fluid section2">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-6">
                 <p>Mongolia inspires our imaginations to run wild with vivid thoughts of nomadic lifestyle and exceptional landscapes. Immersing ourselves in the land of Gengis Kahn to witness the beauty of the Gobi desert. <br>
 
                 <br>As we strive to experience sleeping in a Ger once in our lifetime…we connect culture and wildlife together showcasing a journey with a difference. Our knowledge, expertise and love of personnel experiences drives us to know all about the Mongolia in you.<br>
                         
                 <br>As we are ourselves from a nomadic family, our tailored Mongolian tours designed with the help of local families like ours, will bring you in an adventure you will never forget! </p>
             </div>
-        </div>
-    </section>
-    <section class="container-fluid section3">
-        <div class="row">
-            <div class="col-12 carousel slide w-50" id="carouselwithIndicators">
-                    <div class =" carousel-inner">
-                        <div class = "carousel-item active">
-                            <img class = "d-block w-100" src = "/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/IMG_8460_tonemapped.jpg" alt = "First slide">
-                            <div class = "carousel-caption d-md-block">
-                                <a class="dark" href="tours.html"><h4 class="dark">Meet the nomads</h4></a>
+        
+            <div class="section3">
+                    <div id="carouselExampleCaptions" class="carousel slide multi-item-carousel" data-ride="carousel">
+                       <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="item__third">
+                            <img src="image_library/IMG_8460_tonemapped.jpg" class="d-block w-100" alt="">
+                            <div class="carousel-caption active">
+                              <h4>Become a local</h4>
                             </div>
+                          </div>
                         </div>
-                        <div class = "carousel-item">
-                            <img class = "d-block w-100" src = "/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/IMG_8509_10_11_12_13.jpg" alt = "Second slide">
-                            <div class = "carousel-caption d-md-block">
-                                <a class="dark" href="tours.html"><h4 class="dark">Gobi desert</h4></a>
+                        <div class="carousel-item">
+                          <div class="item__third">
+                            <img src="image_library/IMG_8509_10_11_12_13.jpg" class="d-block w-100" alt="">
+                            <div class="carousel-caption">
+                              <h4>Explore the Gobi desert</h4>
                             </div>
+                          </div>
                         </div>
-                        <div class = "carousel-item">
-                            <img class = "d-block w-100" src = "/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/IMG_8358_tonemapped.jpg" alt = "Third slide">
-                            <div class = "carousel-caption d-md-block">
-                                <a class="light" href="tours.html"><h4 class="light">1000 Camels Festival</h4></a>
+                        <div class="carousel-item">
+                          <div class="item__third">
+                            <img src="image_library/IMG_8358_tonemapped.jpg" class="d-block w-100" alt="">
+                            <div class="carousel-caption">
+                              <h4>Discover the wildlife</h4>
                             </div>
+                          </div>
                         </div>
+                      </div>
+                  
+                      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                  
                     </div>
-                    <a class = "carousel-control-prev" href = "#carouselwithIndicators" role = "button" data-slide = "prev">
-                        <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
-                    </a>    
-                    <a class = "carousel-control-next" href = "#carouselwithIndicators" role = "button" data-slide = "next">
-                        <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
-                    </a>
             </div>
-        </div>
-    </section>
-    <section class="container-fluid section4">
-        <div class="row">
-            <div class="col-12">
+
+            <div class="col-12 col-sm-12 section4">
                 <h4>CLICK ON THIS LINK TO CONTACT US AND EXPLORE YOUR NEXT MONGOLIAN ADVENTURE <br>
                 <br><a href=#>CALL: +034 1232 1234</a></h4>
             </div>
@@ -114,7 +123,7 @@
     <section class="container-fluid section5">
         <div class="row">
             <div class="col-12">
-                <img src="/Users/florentbarth/Desktop/Edx-Programming_with_Python_and_JavaScript/project0/barthflo/image_library/IMG_8151_tonemapped.jpg" alt="newsletter">
+                <img src="image_library/IMG_8151_tonemapped.jpg" alt="newsletter">
                 <div class="col-12 sign-up">
                     <p>Sign up to receive our current newsletter</p>
                     <form>
@@ -161,6 +170,22 @@
         function myFunction(x) {
             x.classList.toggle("change");
         }
+
+$('.carousel-item', '.multi-item-carousel').each(function(){
+  var next = $(this).next();
+  if (! next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+}).each(function(){
+  var prev = $(this).prev();
+  if (! prev.length) {
+    prev = $(this).siblings(':last');
+
+  }
+  prev.children(':nth-last-child(2)').clone().prependTo($(this));
+});
+
 </script> 
 
 </body>

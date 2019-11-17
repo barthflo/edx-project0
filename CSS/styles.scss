@@ -15,10 +15,10 @@ $color5:#3d545f;
 $color6:#A7776A;
 $color7:#243035;
 $color8:white;
-$screen-md:992px;
-$screen-sm:768px;
-$screen-lg:1200px;
-$screen-xs:320px;
+$screen-lg:992px;
+$screen-md:576px;
+$screen-xlg:1200px;
+$screen-sm:321px;
 
 /** Elelements base settings **/
 body, .container-fluid,.row,section{
@@ -55,6 +55,10 @@ h1{
     font-size: 1.1em;
     font-weight: 100;
     text-transform: uppercase;
+    background-image:linear-gradient(to right, $color2, $color1);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
 }
 h2{
     font-family: $h3;
@@ -78,10 +82,10 @@ p{
 #collapse-menu{
     position: fixed;
     overflow: hidden;
-    z-index:10;
+    z-index:11;
     align-items: stretch;
     .col-sm-4{
-        background-color:$color4;
+        background-color:$color7;
         min-height:100vh;
         max-height:100vh;
     }
@@ -109,6 +113,10 @@ p{
 }
 /** Head bar **/
 header{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    z-index:10;
     height:70px;
     background-color: $color3;
     img{
@@ -117,14 +125,9 @@ header{
         margin-left:10px;
     }
     h1{
-        color: $color1;
         text-align: center;
         margin-top: 22px;
         padding-left: 15px;
-        background-image:linear-gradient(to right, $color2, $color1);
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
     }
 }
 .desktop-menu {
@@ -147,6 +150,12 @@ header{
     }
 }
 /** hamburger icon **/
+.hamburger{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    z-index:12;
+}
 .container-hamburger{
     display: inline-block;
     cursor: pointer;
@@ -212,10 +221,7 @@ header{
     }
     .btn-group-vertical{
         width: 100%;
-        margin: 0 auto;
-        padding: 0 10%;
-        position:relative;
-        bottom:260.9px;
+        bottom:348px;
         opacity:.9;
     }
     .btn-primary{
@@ -227,29 +233,33 @@ header{
     }
 }
 /** Section 3 Carousel **/
-.section3{
-    width:100%
-  }
-.carousel{
+.multi-item-carousel{
     height:300px;
+    overflow:hidden;
+    img{
+        height:300px;
+        object-fit: cover;
     }
-.carousel-inner{
-     height:300px;
-   }
-.carousel-item{
-    height:200px;
-  }
-.carousel-item img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-  }
-.dark, .light{
-    font-size:.9em;
-    color: $color8;
-    background-color: $color5;
-    opacity:.8;
+    .carousel-control-prev, .carousel-control-next{
+        width:15%;
+    }
+    .carousel-caption{
+        position: inherit;
+        transform: translate(0px,-163px);
+        -moz-transform: translate(0px, -163px);
+        padding: 0;
+    }
+    h4{
+        font-size:.8em;
+        color:$color8;
+        background-color: $color7;
+        opacity:.8;
+        margin:0 auto;
+        display: inline-block;
+        max-width:50%;
+    }
 }
+
 
 /** Section 4 **/
 .section4{
@@ -352,20 +362,72 @@ header{
 
 }
 /** Media Queries **/
-@media screen and (min-width:$screen-md){
-    .desktop{
-        display:none;
+/** for screen larger than 320px **/
+@media screen and (min-width:$screen-sm){
+    /** Head Bar **/
+    header img{
+      height:45px;
+      padding-left:5px;
+      margin-top:10px;
     }
-
-header{
-     h1{
-        font-size:1.6em;
-        margin-top:23px;
-    }
-    .col-lg-5{
-        text-align: left;
+  
+  /**section 1 **/
+  .section1{
+    h2{
+        padding-top:20px;
+        padding-right:60px;
+        padding-left:60px;
+        }
+    .btn-group-vertical{
+        bottom:358px;
     }
 }
 }
+  /** for screen larger than 575px **/
+  @media screen and (min-width:$screen-md){
+  /**collapsing menu **/
+  #collapse-menu ul{
+    margin:0 20px;
+    padding-top:60px;
+    font-size:.6em;
+  }
+  #collapse-menu li{
+    padding:15px 0;
+  }
+  /** section 1 **/
+  .section1 .row{
+    height:550px;
+  }
+  .section1 img{
+    height:550px;
+  }
+  .section1 h2{
+    position:relative;
+    bottom:550px;
+    padding: 40px 90px;
+    font-size:1.8em;
+  }
+  
+  .section1 .btn-group-vertical{
+    margin:0;
+    bottom:510px;
+  }
+  .section1 .btn-primary{
+    font-size:.9em;
+  }
+}
+  @media screen and (min-width: $screen-lg) {
+    .desktop {
+      display: none; }
+  /** Head bar **/
+    header h1 {
+      font-size: 1.6em;
+      margin-top: 23px; }
+    header .col-lg-5 {
+      text-align: left; } 
+    }
 
-
+    @media screen and (max-width: $screen-lg) {
+    .mobile {
+        display: none;
+    }}
