@@ -1,0 +1,91 @@
+/** Media Queries **/
+/** for mobiles and tablets **/
+@media screen and(max-width:$screen-lg){
+    .no-mobile{
+        display:none;
+    }
+    .headbar{
+        .title{
+            text-align:center;
+        }
+    }
+    .call{
+        height:100px;
+        padding:0px;
+        h4{
+            line-height:10px;
+            font-size:.5em;
+            padding:20px 55px;
+            a{
+                font-size:1.2em;
+                line-height:12px;
+                padding:0;
+            }
+        }
+    }
+    .newsletter{
+        height:200px;
+        .sign-up{
+            top:70px;
+            font-size:.7em;
+        }
+    }
+    .footer{
+        margin-top:0;
+    }
+}
+/** for desktop **/
+@media screen and(min-width:$screen-lg){
+    .no-desktop{
+        display:none;
+    }
+    
+}
+/** for small mobiles **/
+@media screen and (max-width:$screen-sm) {
+    #collapse-menu li{
+       margin:40px 0;
+     }
+    .main-image{
+        height:300px;
+        h2{
+            font-size:1.4em;
+            height:inherit;
+            top:0px;
+            padding:20px;
+            background-color: rgba(66, 60, 53, .1);
+        }
+        .btn-group-vertical{
+            font-size:.5em;
+            bottom:86px;
+            padding:0;
+            font-size:.8em;
+        }
+     }
+    .sign-up{
+         padding:0 30px;
+        }
+    .paragraphs{
+        padding: 20px 50px;
+    }
+
+}
+@media screen and(max-width:$screen-xsm){
+    .headbar{
+        .title{
+            font-size:.9em;
+            padding-right: 0px;
+        }
+        img{
+            width:55px;
+        }
+    }
+    .change{
+        .bar1, .bar3{
+            right:20px;
+        }
+    }
+    .hamburger{
+        right:20px;
+    }
+ }
