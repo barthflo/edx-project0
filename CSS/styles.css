@@ -655,76 +655,26 @@ a:active {
     color: #C37E5E;
     transition: linear .4s; }
 
-.section-tours {
+.cards {
   width: 100%;
-  height: 300px; }
-  .section-tours img {
-    width: 100%;
-    height: 300px;
-    padding: 10px 20px;
-    object-fit: cover;
-    display: block; }
-  .section-tours .caption-title {
-    position: absolute;
-    top: 130px;
-    left: 30%;
-    text-align: center;
-    display: block;
-    width: 40%;
-    font-size: 1em;
-    color: white;
-    background-color: #243035;
-    opacity: .8;
-    text-transform: uppercase; }
-  .section-tours .caption-description {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 280px;
-    padding: 45px 50px;
-    margin: 10px 20px;
-    text-align: center;
-    visibility: hidden;
-    background-color: #a7776ac7; }
-    .section-tours .caption-description p {
-      max-height: 130px;
-      min-height: 130px;
-      overflow: hidden;
-      font-size: .9em; }
-  .section-tours #explore:hover .caption-title, .section-tours #becomealocal:hover .caption-title, .section-tours #discover:hover .caption-title, .section-tours #create:hover .caption-title {
-    display: none; }
-  .section-tours #explore:hover .caption-description, .section-tours #becomealocal:hover .caption-description, .section-tours #discover:hover .caption-description, .section-tours #create:hover .caption-description {
-    visibility: visible;
-    width: 70%;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out; }
-  .section-tours #explore:hover img, .section-tours #becomealocal:hover img, .section-tours #discover:hover img, .section-tours #create:hover img {
-    width: 30%;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out; }
-  .section-tours .btn {
-    padding: 5px 18px;
-    margin-top: 5px;
-    color: none;
-    font-family: "Dancing Script", cursive;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 100;
-    background-color: #9c97971a;
-    border-radius: 0px;
-    border: 1px white solid; }
+  height: 300px;
+  text-align: center; }
+  .cards img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover; }
+  .cards h4 {
+    display: inline;
+    position: relative;
+    bottom: 300px;
+    line-height: 300px; }
 
-#becomealocal .caption-description, #create .caption-description {
-  left: 0; }
-#becomealocal img, #create img {
-  position: absolute;
-  right: 0; }
-
-#explore, #becomealocal, #discover, #create {
-  width: 100%; }
+.description {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+  opacity: .5;
+  display: block; }
 
 /** Media Queries **/
 /** for mobiles and tablets **/
