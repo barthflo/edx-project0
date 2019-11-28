@@ -1,5 +1,5 @@
 @import 'main.scss';
-
+@import 'mediaQueries';
 
 .section-tours{
     width:100%;
@@ -28,21 +28,19 @@
         position:absolute;
         top:0;
         right:0;
-        width:0%;
+        width:20%;
         height:280px;
-        padding:45px 50px;
+        padding:50px 50px;
         margin:10px 20px;
         text-align:center;
         visibility:hidden;
         background-color: #a7776ac7;
         p{
             max-height:130px;
-            min-height:130px;
             overflow:hidden;
-            font-size:.9em;
         }
     }
-    #explore:hover, #becomealocal:hover, #discover:hover, #create:hover{
+    #explore:hover, #becomealocal:hover, #discover:hover{
         .caption-title{
             display:none;
         }
@@ -62,7 +60,7 @@
     }
     .btn{
         padding:5px 18px;
-        margin-top:5px;
+        margin-top:20px;
         color: none;
         font-family :$h3;
         text-transform:uppercase;
@@ -73,7 +71,7 @@
         border:1px white solid;
       }
 }
-#becomealocal, #create{
+#becomealocal{
     .caption-description{
         left:0;
     }
@@ -82,8 +80,7 @@
         right:0;
     }
 }
-#explore, #becomealocal, #discover, #create{
+#explore, #becomealocal, #discover{
     width:100%;
 }
 
-@import 'mediaQueries';
