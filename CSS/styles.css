@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Libre+Baskerville|Playfair+Display|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -158,7 +158,7 @@ a:active {
 
 /** Variables **/
 /** gutters reset **/
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -334,6 +334,25 @@ a:active {
     .newsletter .sign-up {
       top: 70px;
       font-size: .7em; }
+
+  .accordion {
+    height: fit-content; }
+    .accordion .description {
+      width: 100%;
+      visibility: collapse;
+      height: 0; }
+
+  .right, .left {
+    float: none; }
+
+  .accordion:hover .image-title {
+    width: 100%; }
+  .accordion:hover h4 {
+    display: inline; }
+  .accordion:hover .description {
+    width: 100%;
+    height: 300px;
+    visibility: visible; }
 
   .footer {
     margin-top: 0; } }
@@ -505,7 +524,7 @@ a:active {
 
 /** Variables **/
 /** gutters reset **/
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -655,26 +674,53 @@ a:active {
     color: #C37E5E;
     transition: linear .4s; }
 
-.cards {
+.accordion {
   width: 100%;
   height: 300px;
+  overflow: hidden;
+  padding: 10px;
   text-align: center; }
-  .cards img {
+  .accordion .image-title {
     width: inherit;
-    height: inherit;
+    height: 300px; }
+  .accordion img {
+    width: 100%;
+    height: 300px;
     object-fit: cover; }
-  .cards h4 {
+  .accordion h4 {
     display: inline;
     position: relative;
     bottom: 300px;
-    line-height: 300px; }
+    line-height: 300px;
+    color: white;
+    background-color: #243035;
+    font-size: .8em;
+    text-transform: uppercase;
+    opacity: .8;
+    padding: 2px 10px; }
+  .accordion .description {
+    line-height: 300px;
+    background-color: #A7776A;
+    width: 0%;
+    visibility: collapse; }
+    .accordion .description p {
+      margin: 0; }
 
-.description {
-  width: 100%;
-  height: 300px;
-  background-color: blue;
-  opacity: .5;
-  display: block; }
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.accordion:hover .image-title {
+  width: 30%;
+  transition: .4s ease-in-out; }
+.accordion:hover h4 {
+  display: none; }
+.accordion:hover .description {
+  visibility: visible;
+  width: 70%;
+  transition: .4s ease-in-out; }
 
 /** Media Queries **/
 /** for mobiles and tablets **/
@@ -702,6 +748,25 @@ a:active {
     .newsletter .sign-up {
       top: 70px;
       font-size: .7em; }
+
+  .accordion {
+    height: fit-content; }
+    .accordion .description {
+      width: 100%;
+      visibility: collapse;
+      height: 0; }
+
+  .right, .left {
+    float: none; }
+
+  .accordion:hover .image-title {
+    width: 100%; }
+  .accordion:hover h4 {
+    display: inline; }
+  .accordion:hover .description {
+    width: 100%;
+    height: 300px;
+    visibility: visible; }
 
   .footer {
     margin-top: 0; } }

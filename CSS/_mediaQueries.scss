@@ -30,8 +30,32 @@
             font-size:.7em;
         }
     }
-    .footer{
-        margin-top:0;
+.accordion{
+    height: fit-content;
+    .description{
+        width:100%;
+        visibility:collapse;
+        height:0;
+    }
+}
+.right, .left{
+    float: none;
+}
+.accordion:hover{
+    .image-title{
+        width:100%;
+    }
+    h4{
+        display:inline;
+    }
+    .description{
+        width:100%;
+        height:300px;
+        visibility:visible;
+    }
+}
+.footer{
+    margin-top:0;
     }
 }
 /** for desktop **/
@@ -39,12 +63,6 @@
     .no-desktop{
         display:none;
     }
-}
-@media screen and(max-width:$screen-lg){
-    .section-tours {
-        
-    }
-    
 }
 /** for small mobiles **/
 @media screen and (max-width:$screen-sm) {
