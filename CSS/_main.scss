@@ -21,7 +21,7 @@ $screen-xlg:1200px;
 $screen-xsm:375px;
 $screen-sm: 425px;
 /** gutters reset **/
-.row, .container-fluid, #explore, #becomealocal, #discover{
+.row, .container-fluid{
     padding: 0;
     margin:0;
 }

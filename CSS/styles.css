@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Dancing+Script|Libre+Baskerville|Playfair+Display|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -158,7 +158,7 @@ a:active {
 
 /** Variables **/
 /** gutters reset **/
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -335,6 +335,26 @@ a:active {
       top: 70px;
       font-size: .7em; }
 
+  .accordion {
+    height: fit-content; }
+    .accordion .description {
+      width: 100%;
+      visibility: collapse;
+      height: 0; }
+
+  .right, .left {
+    float: none; }
+
+  .accordion:hover .image-title {
+    width: 100%; }
+  .accordion:hover h4 {
+    display: inline; }
+  .accordion:hover .description {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 3%;
+    visibility: visible; }
+
   .footer {
     margin-top: 0; } }
 /** for desktop **/
@@ -364,7 +384,10 @@ a:active {
     padding: 0 30px; }
 
   .paragraphs {
-    padding: 20px 50px; } }
+    padding: 20px 50px; }
+
+  .accordion:hover .description {
+    padding-bottom: 8%; } }
 @media screen and (max-width: 375px) {
   .headbar .title {
     font-size: .9em;
@@ -505,7 +528,7 @@ a:active {
 
 /** Variables **/
 /** gutters reset **/
-.row, .container-fluid, #explore, #becomealocal, #discover {
+.row, .container-fluid {
   padding: 0;
   margin: 0; }
 
@@ -655,76 +678,70 @@ a:active {
     color: #C37E5E;
     transition: linear .4s; }
 
-.section-tours {
+.accordion {
   width: 100%;
-  height: 300px; }
-  .section-tours img {
+  height: 300px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center; }
+  .accordion .image-title {
+    width: inherit;
+    height: 300px; }
+  .accordion img {
     width: 100%;
     height: 300px;
-    padding: 10px 20px;
-    object-fit: cover;
-    display: block; }
-  .section-tours .caption-title {
-    position: absolute;
-    top: 130px;
-    left: 30%;
-    text-align: center;
-    display: block;
-    width: 40%;
-    font-size: 1em;
+    object-fit: cover; }
+  .accordion h4 {
+    display: inline;
+    position: relative;
+    bottom: 300px;
+    line-height: 300px;
     color: white;
     background-color: #243035;
-    opacity: .8;
-    text-transform: uppercase; }
-  .section-tours .caption-description {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 280px;
-    padding: 45px 50px;
-    margin: 10px 20px;
-    text-align: center;
-    visibility: hidden;
-    background-color: #a7776ac7; }
-    .section-tours .caption-description p {
-      max-height: 130px;
-      min-height: 130px;
-      overflow: hidden;
-      font-size: .9em; }
-  .section-tours #explore:hover .caption-title, .section-tours #becomealocal:hover .caption-title, .section-tours #discover:hover .caption-title, .section-tours #create:hover .caption-title {
-    display: none; }
-  .section-tours #explore:hover .caption-description, .section-tours #becomealocal:hover .caption-description, .section-tours #discover:hover .caption-description, .section-tours #create:hover .caption-description {
-    visibility: visible;
-    width: 70%;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out; }
-  .section-tours #explore:hover img, .section-tours #becomealocal:hover img, .section-tours #discover:hover img, .section-tours #create:hover img {
-    width: 30%;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out; }
-  .section-tours .btn {
-    padding: 5px 18px;
-    margin-top: 5px;
-    color: none;
-    font-family: "Dancing Script", cursive;
+    font-size: .8em;
     text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 100;
-    background-color: #9c97971a;
-    border-radius: 0px;
-    border: 1px white solid; }
+    opacity: .8;
+    padding: 2px 10px; }
+  .accordion .description {
+    height: inherit;
+    background-color: #A7776A;
+    width: 0%;
+    visibility: collapse; }
+    .accordion .description p {
+      line-height: 30px;
+      padding: 3% 10%;
+      margin: 0;
+      min-height: 70%;
+      max-height: 80%;
+      overflow: auto;
+      color: #243035; }
+    .accordion .description .btn-light {
+      display: inline;
+      padding: 5px;
+      border: 2px solid #dee2e6;
+      font-family: "Dancing Script", cursive;
+      color: #dee2e6;
+      background-color: transparent;
+      text-transform: uppercase; }
+    .accordion .description .btn-light:hover {
+      border: #243035;
+      background-color: #243035; }
 
-#becomealocal .caption-description, #create .caption-description {
-  left: 0; }
-#becomealocal img, #create img {
-  position: absolute;
-  right: 0; }
+.right {
+  float: right; }
 
-#explore, #becomealocal, #discover, #create {
-  width: 100%; }
+.left {
+  float: left; }
+
+.accordion:hover .image-title {
+  width: 30%;
+  transition: .4s ease-in-out; }
+.accordion:hover h4 {
+  display: none; }
+.accordion:hover .description {
+  visibility: visible;
+  width: 70%;
+  transition: .4s ease-in-out; }
 
 /** Media Queries **/
 /** for mobiles and tablets **/
@@ -752,6 +769,26 @@ a:active {
     .newsletter .sign-up {
       top: 70px;
       font-size: .7em; }
+
+  .accordion {
+    height: fit-content; }
+    .accordion .description {
+      width: 100%;
+      visibility: collapse;
+      height: 0; }
+
+  .right, .left {
+    float: none; }
+
+  .accordion:hover .image-title {
+    width: 100%; }
+  .accordion:hover h4 {
+    display: inline; }
+  .accordion:hover .description {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 3%;
+    visibility: visible; }
 
   .footer {
     margin-top: 0; } }
@@ -782,7 +819,10 @@ a:active {
     padding: 0 30px; }
 
   .paragraphs {
-    padding: 20px 50px; } }
+    padding: 20px 50px; }
+
+  .accordion:hover .description {
+    padding-bottom: 8%; } }
 @media screen and (max-width: 375px) {
   .headbar .title {
     font-size: .9em;
