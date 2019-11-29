@@ -50,7 +50,8 @@
     }
     .description{
         width:100%;
-        height:300px;
+        height:fit-content;
+        padding-bottom: 3%;
         visibility:visible;
     }
 }
@@ -91,7 +92,11 @@
     .paragraphs{
         padding: 20px 50px;
     }
-
+.accordion:hover{
+    .description{
+        padding-bottom: 8%;
+    }
+}
 }
 @media screen and(max-width:$screen-xsm){
     .headbar{
