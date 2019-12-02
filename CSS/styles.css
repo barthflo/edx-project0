@@ -626,8 +626,12 @@ a:active {
   .gallery th {
     width: 50%; }
 
-  .gallery-title h2 {
-    font-size: 1em; } }
+  .gallery-title {
+    position: sticky;
+    width: 100%;
+    opacity: 1; }
+    .gallery-title h2 {
+      font-size: 1em; } }
 @media screen and (max-width: 375px) {
   .headbar .title {
     font-size: .9em;

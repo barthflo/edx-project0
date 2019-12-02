@@ -109,6 +109,9 @@
     }
 }
 .gallery-title{
+    position:sticky;
+    width:100%;
+    opacity:1;
     h2{
         font-size:1em;
     }
