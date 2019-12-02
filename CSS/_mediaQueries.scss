@@ -30,8 +30,33 @@
             font-size:.7em;
         }
     }
-    .footer{
-        margin-top:0;
+.accordion{
+    height: fit-content;
+    .description{
+        width:100%;
+        visibility:collapse;
+        height:0;
+    }
+}
+.right, .left{
+    float: none;
+}
+.accordion:hover{
+    .image-title{
+        width:100%;
+    }
+    h4{
+        display:inline;
+    }
+    .description{
+        width:100%;
+        height:fit-content;
+        padding-bottom: 3%;
+        visibility:visible;
+    }
+}
+.footer{
+    margin-top:0;
     }
 }
 /** for desktop **/
@@ -39,7 +64,6 @@
     .no-desktop{
         display:none;
     }
-    
 }
 /** for small mobiles **/
 @media screen and (max-width:$screen-sm) {
@@ -68,7 +92,11 @@
     .paragraphs{
         padding: 20px 50px;
     }
-
+.accordion:hover{
+    .description{
+        padding-bottom: 8%;
+    }
+}
 }
 @media screen and(max-width:$screen-xsm){
     .headbar{
