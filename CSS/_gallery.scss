@@ -22,3 +22,27 @@
         left:0;
     }
 }
+.gallery-title{
+    position: fixed;
+    top:70px;
+    z-index:2;
+    text-align: center;
+    padding: 10px;
+    background-color: $color8;
+    opacity:.8;
+    h2{
+        color:$color7;
+        font-size: 1.2em;
+    }
+}
+ .modal-body{
+     background-color:$color2;
+     box-shadow: 0 0 30px 10px;
+     padding:10px;
+     span{
+         display:none;
+     }
+     .img-fluid{
+        height:100%;
+     }
+ }
