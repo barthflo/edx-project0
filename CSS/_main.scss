@@ -69,6 +69,7 @@ a:active{
 /** Header **/
 .headbar{
     position:sticky;
+    position:-webkit-sticky;
     top:0;
     height:70px;
     z-index:2;
