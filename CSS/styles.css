@@ -392,8 +392,10 @@ a:active {
 
 .avatars {
   text-align: center;
-  margin: 20px;
-  font-family: "Roboto", sans-serif; }
+  margin: 20px; }
+  .avatars h4 {
+    font-size: 1.4em;
+    margin-top: 10px; }
   .avatars p {
     font-size: .9em;
     padding-top: 10px;
@@ -416,7 +418,11 @@ a:active {
     font-size: .8em;
     color: #243035; }
   .form input[type=submit] {
+    cursor: pointer;
     color: crimson; }
+  .form input[type=submit]:hover {
+    color: #3d545f;
+    transition: .4s ease-in-out; }
   .form ::placeholder {
     color: inherit;
     opacity: .5; }

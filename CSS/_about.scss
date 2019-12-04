@@ -5,9 +5,12 @@
 .avatars{
     text-align:center;
     margin:20px;
-    font-family:$h4;
     h2{
        @extend%h2;
+    }
+    h4{
+        font-size:1.4em;
+        margin-top:10px;
     }
     p{
         @extend%h2;
@@ -38,7 +41,12 @@
         color:$color7;
     }
     input[type=submit]{
+        cursor: pointer;
         color:crimson;
+    }
+    input[type=submit]:hover{
+        color:$color5;
+        transition: .4s ease-in-out;
     }
     ::placeholder{
         color:inherit;
