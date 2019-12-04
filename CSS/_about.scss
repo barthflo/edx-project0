@@ -1,0 +1,55 @@
+%h2{
+    color:$color7;
+    padding-bottom:20px;
+}
+.avatars{
+    text-align:center;
+    margin:20px;
+    h2{
+       @extend%h2;
+    }
+    h4{
+        font-size:1.4em;
+        margin-top:10px;
+    }
+    p{
+        @extend%h2;
+        font-size:.9em;
+        padding-top: 10px;
+        text-align: justify;
+    }
+    img{
+        width:200px;
+        height:200px;
+        object-fit: cover;
+        border-radius:50%;
+        border:10px solid $color2;
+        margin-bottom:10px;
+    }
+}
+.form{
+    text-align:center;
+    background-color: $color1;
+    padding: 20px;
+    h2{
+        @extend%h2;
+    }
+    .form-control{
+        margin:2px;
+        font-family: $h1;
+        font-size: .8em;
+        color:$color7;
+    }
+    input[type=submit]{
+        cursor: pointer;
+        color:crimson;
+    }
+    input[type=submit]:hover{
+        color:$color5;
+        transition: .4s ease-in-out;
+    }
+    ::placeholder{
+        color:inherit;
+        opacity:.5;
+    }
+}

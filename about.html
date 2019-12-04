@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="https://kit.fontawesome.com/8b9ead0d59.js"></script>
+    <title>Wind Horse Tours</title>
+</head>
+<body>
+        <!-- collapse menu no-desktop-->
+    <div class="container-fluid  no-desktop">
+        <div class="col-1 offset-10 col-sm-1 offset-sm-11 ">
+            <div class="hamburger">
+                <a href="#collapse-menu" data-toggle="collapse" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+         </div>
+    </div>
+    <div class="collapse container-fluid no-desktop" id="collapse-menu">
+        <div class="row">
+            <div class="col-12 col-sm-4 offset-sm-8">
+                <a href="index.html"><img src="image_library/windhorse.png" alt="logo"></a>
+                <ul class="collapse-menu">
+                    <a href="tours.html"><li>Our tours</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="about.html"><li>About us</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--Header-->
+    <div class="container-fluid headbar navbar-fixed-top">
+        <div class="row">
+            <div class="col-1 logo"><a href="index.html"><img class="img-responsive" src="image_library/windhorse.png" alt="logo"></a></div>
+            <div class="col-10 col-lg-5 title"><a href="index.html"><h1>wind horse tours</h1></a></div>  
+            <div class="col-lg-6 navbar-desktop no-mobile">  
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Our Tours</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Main-->
+    <div class="container-fluid">
+        <div class="row avatars">
+            <div class="col-12">
+                <h2> Meet our team</h2>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="image_library/IMG_9480_tonemapped.jpg" class="img-responsive" alt="uka">
+                <h4>Uka</h4>
+                <p>Ea anim Lorem labore nostrud dolor sunt id Lorem. In quis laboris ad aliqua. Velit laboris in exercitation occaecat elit minim dolor deserunt. Do eu officia consequat ipsum est velit. Deserunt id ut sunt minim proident irure ullamco consequat ea. Non ut et aliqua adipisicing.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="image_library/IMG_9703_tonemapped.jpg" class="img-responsive" alt="baagi">
+                <h4>Baagi</h4>
+                <p>Consequat dolore cillum aliqua voluptate incididunt commodo occaecat consequat non irure eiusmod sint sint adipisicing. Ipsum nostrud nostrud laboris duis cillum ad reprehenderit magna tempor dolor do excepteur sint culpa. Do minim ad duis ad sunt. Est anim deserunt excepteur aute.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="image_library/IMG_9944_tonemapped.jpg" class="img-responsive" alt="wagon">
+                <h4>The Wagon</h4>
+                <p> Anim aliqua aliqua eu magna quis consequat labore mollit veniam nisi ad pariatur dolore. Excepteur adipisicing pariatur fugiat anim amet duis tempor cupidatat. Excepteur nisi laborum officia fugiat est occaecat reprehenderit dolore Lorem id laboris.</p>
+            </div>
+        </div>
+
+        <form class="form" id="form">
+            <h2> Book with us</h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" placeholder="First name (Required)" autocorrect="off" autocomplete="off" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" placeholder="Last name (Required)" autocorrect="off" autocomplete="off" required>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                    <input type="tel" class="form-control" placeholder="+xx" pattern="+[0-9]{2}">
+                </div>
+                <div class="col-9 col-md-4 col-lg-5">
+                    <input type="tel" class="form-control" placeholder="Phone Number (Optional)" pattern="[0-9]{6,}">
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" placeholder="Your e-mail (Required)" autocorrect="off" autocomplete="off" autocapitalize="off" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <select name="tours" class="form-control" required>
+                        <option value="Pick up a tour" disabled selected>Pick up a tour</option>
+                        <option value="Explore Gobi - 10 days / 600$">Explore Gobi - 10 days / 600$</option>
+                        <option value="Become Local - 5 days / 500$">Become a Local - 5 days / 500$</option>
+                        <option value="Discover Wildlife - 14 days / 600$">Discover the Wildlife - 14 days / 600$</option>
+                        <option value="Create Your Own - Start at 70$ / day"> Create Your Own - Starting at 70$ / day</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" required placeholder="Select your dates" name="daterange" value="">
+                </div>
+                <div class="col-12">
+                    <textarea placeholder="Tell us more about yourself (Required when you chose to create your own)" class="form-control" rows="10"></textarea>
+                </div>
+                <div class="col-12">
+                    <input type="submit" class="form-control" name="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-12">
+                <a href="mailto:flrnt.barth@gmail.com">windhorsetours@gmail.com</a>
+                <a href="tel:+03412321234">+034 1232 1234</a>
+                <div class="row">
+                    <a href="#" class="col-6 ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="col-6 fb"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p>© Florent Barth 2019</p>
+            </div>
+        </div>
+    </div>
+    <!--Scripts-->
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin = "anonymous">
+    </script>
+     
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin = "anonymous">
+    </script>
+     
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin = "anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Hamburger animation-->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        };
+    </script>
+    <!--Form date range selector-->
+    <script>
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+    });
+    </script>
+    </body>
+    </html>
