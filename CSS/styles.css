@@ -325,7 +325,7 @@ a:active {
       background-color: transparent;
       text-transform: uppercase; }
     .accordion .description .btn-light:hover {
-      border: #243035;
+      border-color: #243035;
       background-color: #243035; }
 
 .right {
@@ -342,7 +342,8 @@ a:active {
 .accordion:hover .description {
   visibility: visible;
   width: 70%;
-  transition: .4s ease-in-out; }
+  transition: .4s ease-in-out;
+  margin-bottom: 10px; }
 
 .gallery {
   width: 100%; }

@@ -49,7 +49,7 @@
             text-transform:uppercase;
         }
         .btn-light:hover{
-            border:$color7;
+            border-color:$color7;
             background-color: $color7;
         }
     }
@@ -72,6 +72,7 @@
         visibility: visible;
         width:70%;
         transition: .4s ease-in-out;
+        margin-bottom: 10px;
     }
 }
 
