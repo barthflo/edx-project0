@@ -8,7 +8,6 @@
     font-family:$h4;
     h2{
        @extend%h2;
-       font-size:1.5em;
     }
     p{
         @extend%h2;
@@ -23,5 +22,26 @@
         border-radius:50%;
         border:10px solid $color2;
         margin-bottom:10px;
+    }
+}
+.form{
+    text-align:center;
+    background-color: $color1;
+    padding: 20px;
+    h2{
+        @extend%h2;
+    }
+    .form-control{
+        margin:2px;
+        font-family: $h1;
+        font-size: .8em;
+        color:$color7;
+    }
+    input[type=submit]{
+        color:crimson;
+    }
+    ::placeholder{
+        color:inherit;
+        opacity:.5;
     }
 }

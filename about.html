@@ -72,7 +72,11 @@
                 <p> Anim aliqua aliqua eu magna quis consequat labore mollit veniam nisi ad pariatur dolore. Excepteur adipisicing pariatur fugiat anim amet duis tempor cupidatat. Excepteur nisi laborum officia fugiat est occaecat reprehenderit dolore Lorem id laboris.</p>
             </div>
         </div>
-        <form>
+    
+
+
+        <form class="form">
+            <h2 id="form"> Book with us</h2>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <input type="text" class="form-control" placeholder="First name (Required)" autocorrect="off" autocomplete="off" required>
@@ -91,7 +95,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <select name="tours" class="form-control" required>
-                        <option value="Pick up a tour" selected>Pick up a tour</option>
+                        <option value="Pick up a tour" disabled selected>Pick up a tour</option>
                         <option value="Explore Gobi - 10 days / 600$">Explore Gobi - 10 days / 600$</option>
                         <option value="Become Local - 5 days / 500$">Become a Local - 5 days / 500$</option>
                         <option value="Discover Wildlife - 14 days / 600$">Discover the Wildlife - 14 days / 600$</option>
@@ -100,6 +104,9 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <input type="text" class="form-control" required placeholder="Select your dates" name="daterange" value="">
+                </div>
+                <div class="col-12">
+                    <textarea placeholder="Tell us more about yourself (Required when you chose to create your own)" class="form-control" rows="10"></textarea>
                 </div>
                 <div class="col-12">
                     <input type="submit" class="form-control" name="Submit">
