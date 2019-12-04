@@ -4,10 +4,10 @@ My project0 is a fictionnal website about a travel tour company that I used when
 All the content pictures are mine.
 
 I used SASS partials to organized my styles, with a master styles.css regrouping them all.
-I used Bootstrap grid system to have a fully responsive layout and I used some of the Bootstrap components such as buttons, forms, collapse and carousel.
-I used bootstrap script coupled with jquery and jpopper for the behaviour of some compnents in addition of short lines of Javascript.
+I used Bootstrap 4 grid system to have a fully responsive layout and I used some of the Bootstrap 4 components such as buttons, forms, collapse and carousel.
+I used bootstrap script coupled with jquery and jpopper for the behaviour of some components in addition of short lines of Javascript.
 
-My barthflo folder contains the 4 html pages, a CSS folder and my Image Library folder. The CSS folder contains all my SASS partials, my master SASS and the compiled mast CSS. My partials are listed as such : 
+My barthflo folder contains the 4 html pages, a CSS folder and my Image Library folder. The CSS folder contains all my SASS partials, my master SASS and the compiled CSS. My partials are listed as such : 
 _main : contains my variables, typography, header and footer design and the collapse menu. They appear on everypages on my website.
 _home, _tours, _gallery, _about : my pages content styles.
 _mediaQueries : all my media queries for responsiveness.
