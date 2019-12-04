@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <script src="https://kit.fontawesome.com/8b9ead0d59.js"></script>
     <title>Wind Horse Tours</title>
 </head>
@@ -97,6 +98,9 @@
                         <option value="Create Your Own - Start at 70$ / day"> Create Your Own - Starting at 70$ / day</option>
                     </select>
                 </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="form-control" required placeholder="Select your dates" name="daterange" value="">
+                </div>
                 <div class="col-12">
                     <input type="submit" class="form-control" name="Submit">
                 </div>
@@ -133,10 +137,30 @@
         integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
         crossorigin = "anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Hamburger animation-->
     <script>
         function myFunction(x) {
             x.classList.toggle("change");
         };
+    </script>
+    <!--Form date range selector-->
+    <script>
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+        $('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+        $('input[name="daterange"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+    });
     </script>
     </body>
     </html>
