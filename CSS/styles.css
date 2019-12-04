@@ -542,7 +542,8 @@ a:active {
     height: 100%; }
 
 .avatars h2, .avatars p {
-  color: #243035; }
+  color: #243035;
+  padding-bottom: 20px; }
 
 .avatars {
   text-align: center;
@@ -551,7 +552,9 @@ a:active {
   .avatars h2 {
     font-size: 1.5em; }
   .avatars p {
-    font-size: .9em; }
+    font-size: .9em;
+    padding-top: 10px;
+    text-align: justify; }
   .avatars img {
     width: 200px;
     height: 200px;
